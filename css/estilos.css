@@ -9,8 +9,9 @@ body {
   background-image: url('https://image.freepik.com/fotos-gratis/cores-luminosas-em-gradiente_23-2147734161.jpg');
   background-size: auto 100vh; 
   font-family: 'Source Code Pro', monospace;
-  height: 100vh;
+  height: 965px;
   font-size: 12px;
+  background-size:cover;
 }
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -45,7 +46,7 @@ header {
 }
 
 .menu {
-  background-color: white;
+  background-color: whitesmoke;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -64,18 +65,18 @@ header {
 .menu a {
   display: block;
   padding: 10px 20px;
-  transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 3s;
 }
 
 .menu a:active,
 .menu a:hover {
-  background-color: teal;
+  background-color: #ffa500;
   color: white;
 }
 
 a {
-  color: teal;
-  text-decoration: none;
+  color:black;
+  text-decoration: none ;
 }
 
 a:hover {
@@ -141,7 +142,7 @@ a:hover {
 }
 
 .sobre p {
-  color: white;
+  color: rgb(255, 255, 255);
   text-indent: 1.4em;
   margin-bottom: 1.4em;
   text-align: justify;
@@ -152,10 +153,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.sobre a:hover {
-  background-color: cyan;
+.sobre a:hover 
+{
+  background-color: wite;
   text-decoration: none;
-  color: magenta;
+  color: rgb(0, 0, 0);
 }
 
 .sobre .avatar {
@@ -197,13 +199,17 @@ a:hover {
 }
 
 .flip-card:hover .card {
+  
   transform: rotateY(180deg);
+
 }
 
 .card {
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 3s;
+  transition: transform 5s;
+  height: 140px;
+  width: 160px;
 }
 
 .card-front, 
@@ -219,7 +225,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgb(255, 255, 255, .7);
   height: 180px;
   width: 100%;
   transform: rotateY(180deg);
